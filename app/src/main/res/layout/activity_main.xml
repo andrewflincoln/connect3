@@ -31,11 +31,10 @@
             android:layout_height="100dp"
             android:layout_margin="15dp"
             android:layout_marginLeft="25dp"
-            app:layout_column="0"
-            app:layout_row="0"
             android:onClick="dropIn"
             android:tag="0"
-             />
+            app:layout_column="0"
+            app:layout_row="0" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -43,11 +42,10 @@
             android:layout_height="100dp"
             android:layout_margin="15dp"
             android:layout_marginLeft="15dp"
-            app:layout_column="1"
-            app:layout_row="0"
             android:onClick="dropIn"
             android:tag="1"
-             />
+            app:layout_column="1"
+            app:layout_row="0" />
 
 
         <ImageView
@@ -55,14 +53,10 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="15dp"
-            app:layout_column="2"
-            app:layout_row="0"
             android:onClick="dropIn"
             android:tag="2"
-             />
-
-
-
+            app:layout_column="2"
+            app:layout_row="0" />
 
 
         <ImageView
@@ -72,11 +66,10 @@
             android:layout_margin="15dp"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="25dp"
-            app:layout_column="0"
-            app:layout_row="1"
             android:onClick="dropIn"
             android:tag="3"
-             />
+            app:layout_column="0"
+            app:layout_row="1" />
 
         <ImageView
             android:id="@+id/imageView5"
@@ -85,11 +78,10 @@
             android:layout_margin="15dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="25dp"
-            app:layout_column="1"
-            app:layout_row="1"
             android:onClick="dropIn"
             android:tag="4"
-             />
+            app:layout_column="1"
+            app:layout_row="1" />
 
 
         <ImageView
@@ -99,11 +91,10 @@
             android:layout_margin="15dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="25dp"
-            app:layout_column="2"
-            app:layout_row="1"
             android:onClick="dropIn"
             android:tag="5"
-             />
+            app:layout_column="2"
+            app:layout_row="1" />
 
         <ImageView
             android:id="@+id/imageView7"
@@ -112,11 +103,10 @@
             android:layout_margin="15dp"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="25dp"
-            app:layout_column="0"
-            app:layout_row="2"
             android:onClick="dropIn"
             android:tag="6"
-             />
+            app:layout_column="0"
+            app:layout_row="2" />
 
 
         <ImageView
@@ -127,13 +117,11 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="25dp"
             android:onClick="dropIn"
+            android:tag="7"
             app:layout_column="1"
             app:layout_row="2"
-            android:tag="7"
 
             />
-
-
 
 
         <ImageView
@@ -143,12 +131,12 @@
             android:layout_margin="15dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="25dp"
-            app:layout_column="2"
-            app:layout_row="2"
             android:onClick="dropIn"
             android:tag="8"
+            app:layout_column="2"
+            app:layout_row="2"
 
-        />
+            />
 
     </androidx.gridlayout.widget.GridLayout>
 
@@ -156,11 +144,36 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:text="Connect 3"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/winnerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:onClick="playAgain"
+        android:text="Play again"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/winnerText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
