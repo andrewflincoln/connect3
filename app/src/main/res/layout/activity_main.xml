@@ -24,19 +24,49 @@
         app:layout_constraintTop_toTopOf="parent"
         app:rowCount="3">
 
+
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="15dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="25dp"
-            app:layout_column="1"
-            app:layout_row="1"
-            app:srcCompat="@drawable/red" />
+            android:layout_marginLeft="25dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            android:onClick="dropIn"
+            android:tag="0"
+             />
 
         <ImageView
             android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="15dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            android:onClick="dropIn"
+            android:tag="1"
+             />
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            app:layout_column="2"
+            app:layout_row="0"
+            android:onClick="dropIn"
+            android:tag="2"
+             />
+
+
+
+
+
+        <ImageView
+            android:id="@+id/imageView4"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="15dp"
@@ -44,29 +74,9 @@
             android:layout_marginTop="25dp"
             app:layout_column="0"
             app:layout_row="1"
-            app:srcCompat="@drawable/red" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="15dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="25dp"
-            app:layout_column="2"
-            app:layout_row="1"
-            app:srcCompat="@drawable/red" />
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="15dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="25dp"
-            app:layout_column="2"
-            app:layout_row="2"
-            app:srcCompat="@drawable/red" />
+            android:onClick="dropIn"
+            android:tag="3"
+             />
 
         <ImageView
             android:id="@+id/imageView5"
@@ -76,11 +86,27 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="25dp"
             app:layout_column="1"
-            app:layout_row="2"
-            app:srcCompat="@drawable/red" />
+            app:layout_row="1"
+            android:onClick="dropIn"
+            android:tag="4"
+             />
+
 
         <ImageView
             android:id="@+id/imageView6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            app:layout_column="2"
+            app:layout_row="1"
+            android:onClick="dropIn"
+            android:tag="5"
+             />
+
+        <ImageView
+            android:id="@+id/imageView7"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="15dp"
@@ -88,26 +114,27 @@
             android:layout_marginTop="25dp"
             app:layout_column="0"
             app:layout_row="2"
-            app:srcCompat="@drawable/red" />
+            android:onClick="dropIn"
+            android:tag="6"
+             />
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="15dp"
-            app:layout_column="2"
-            app:layout_row="0"
-            app:srcCompat="@drawable/red" />
 
         <ImageView
             android:id="@+id/imageView8"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="15dp"
-            android:layout_marginLeft="25dp"
-            app:layout_column="0"
-            app:layout_row="0"
-            app:srcCompat="@drawable/red" />
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:onClick="dropIn"
+            app:layout_column="1"
+            app:layout_row="2"
+            android:tag="7"
+
+            />
+
+
+
 
         <ImageView
             android:id="@+id/imageView9"
@@ -115,11 +142,25 @@
             android:layout_height="100dp"
             android:layout_margin="15dp"
             android:layout_marginLeft="15dp"
-            app:layout_column="1"
-            app:layout_row="0"
-            app:srcCompat="@drawable/red" />
+            android:layout_marginTop="25dp"
+            app:layout_column="2"
+            app:layout_row="2"
+            android:onClick="dropIn"
+            android:tag="8"
 
+        />
 
     </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Connect 3"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
